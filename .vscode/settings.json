@@ -1,0 +1,8 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cucumberautocomplete.steps": [
+        "src/test/java/StepDefinations/*.java"
+    ],
+    "cucumberautocomplete.syncfeatures": "src/test/resources/Features/*.feature"
+}

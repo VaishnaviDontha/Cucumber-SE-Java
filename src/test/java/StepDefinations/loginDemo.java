@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
@@ -15,6 +16,9 @@ public class loginDemo {
 
     @Given("browser is open")
     public void browser_is_open() {
+
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--remote-allow-origins=*");
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -26,7 +30,7 @@ public class loginDemo {
     @And("User is on the login page")
     public void user_is_on_the_login_page() {
 
-        driver.get("https://opensource-demo.orangehrmlive.com/");
+        driver.get("hhttps://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 
     }

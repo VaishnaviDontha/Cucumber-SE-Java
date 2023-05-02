@@ -1,8 +1,9 @@
 package Pages;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class loginPage {
 
@@ -16,7 +17,7 @@ public class loginPage {
     public loginPage(WebDriver dr){
 
         this.driver = dr;
-        Assert.assertEquals(driver.getTitle(),"OrangeHRM");
+        Assert.assertEquals("OrangeHRM",driver.getTitle());
     }
 
 

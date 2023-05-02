@@ -30,7 +30,7 @@ public class loginDemoWithPOM {
    @And("User navigates to Login Page")
    public void user_navigates_to_login_page() {
 
-       driver.get("https://opensource-demo.orangehrmlive.com/");
+       driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 
    }

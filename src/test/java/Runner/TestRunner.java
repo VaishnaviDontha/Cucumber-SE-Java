@@ -1,4 +1,4 @@
-package StepDefinations;
+package Runner;
 
 
 import io.cucumber.junit.Cucumber;
