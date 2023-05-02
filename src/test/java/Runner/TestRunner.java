@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/Features/loginWithData.feature",
         glue = {"StepDefinations"},
         monochrome = true,
-        plugin = {"pretty", "json:target/cucumber.json"} 
+        plugin = {"pretty", "json:src/Reports/cucumber.json"}
         //, "json:Reports/JSONReports/reports.json", "junit:Reports/JUnitReport/report.xml"}
         )
 public class TestRunner {
